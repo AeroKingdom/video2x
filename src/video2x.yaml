@@ -53,7 +53,7 @@ waifu2x_converter_cpp:
   #output: null # path to output image file or directory  (you should use the full path)
   #input: null # (required) path to input image file or directory (you should use the full path)
 waifu2x_ncnn_vulkan:
-  path: '%LOCALAPPDATA%\video2x\waifu2x-ncnn-vulkan\waifu2x-ncnn-vulkan'
+  path: '/content/waifu2x-ncnn-vulkan-20200818-linux/waifu2x-ncnn-vulkan'
   v: null # verbose output
   #i: null # input-path: input image path (jpg/png/webp) or directory
   #o: null # output-path: output image path (jpg/png/webp) or directory
@@ -64,9 +64,9 @@ waifu2x_ncnn_vulkan:
   g: 0 # gpu-id: gpu device to use (default=0)
   j: '1:2:2' # thread count for load/proc/save (default=1:2:2) can be 1:2,2,2:2 for multi-gpu
   x: false # enable tta mode
-  #f: png # output image format (jpg/png/webp, default=ext/png)
+  #f: jpg # output image format (jpg/png/webp, default=ext/png)
 srmd_ncnn_vulkan:
-  path: '%LOCALAPPDATA%\video2x\srmd-ncnn-vulkan\srmd-ncnn-vulkan'
+  path: '/content/srmd-ncnn-vulkan-20200818-linux/srmd-ncnn-vulkan'
   v: null # verbose output
   #i: null # input-path: input image path (jpg/png) or directory
   #o: null # output-path: output image path (png) or directory
@@ -79,7 +79,7 @@ srmd_ncnn_vulkan:
   x: false # enable tta mode
   #f: png # output image format (jpg/png/webp, default=ext/png)
 realsr_ncnn_vulkan:
-  path: '%LOCALAPPDATA%\video2x\realsr-ncnn-vulkan\realsr-ncnn-vulkan'
+  path: '/content/realsr-ncnn-vulkan-20200818-linux/realsr-ncnn-vulkan'
   v: null # verbose output
   #i: null # input-path: input image path (jpg/png) or directory
   #o: null # output-path: output image path (png) or directory
@@ -120,7 +120,7 @@ anime4kcpp:
   webVideo: null # process the video from URL
   alpha: false # preserve the Alpha channel for transparent image
 ffmpeg:
-  ffmpeg_path: '%LOCALAPPDATA%\video2x\ffmpeg\bin'
+  ffmpeg_path: '/usr/bin'
   intermediate_file_name: 'intermediate.mkv'
   # Step 1: Frame Extraction
   # extract all frames from original input into temporary directory
@@ -178,8 +178,8 @@ gifski:
   quiet: false # Do not show a progress bar
 video2x:
   video2x_cache_directory: null # default: %TEMP%\video2x, directory where cache files are stored, will be deleted if preserve_frames is not set to true
-  extracted_frame_format: png # png/jpg intermediate file format used for extracted frames during video processing
+  extracted_frame_format: jpg # png/jpg intermediate file format used for extracted frames during video processing
   output_file_name_format_string: "{original_file_name}_output{extension}" # format string to use for generating output file names
-  image_output_extension: .png # image output extension during batch processing
+  image_output_extension: .jpg # image output extension during batch processing
   video_output_extension: .mp4 # video output extension during batch processing
   preserve_frames: false # if set to true, the cache directory won't be cleaned upon task completion
