@@ -64,7 +64,7 @@ waifu2x_ncnn_vulkan:
   g: 0 # gpu-id: gpu device to use (default=0)
   j: '1:2:2' # thread count for load/proc/save (default=1:2:2) can be 1:2,2,2:2 for multi-gpu
   x: false # enable tta mode
-  #f: jpg # output image format (jpg/png/webp, default=ext/png)
+  #f: png # output image format (jpg/png/webp, default=ext/png)
 srmd_ncnn_vulkan:
   path: '/content/srmd-ncnn-vulkan-20200818-linux/srmd-ncnn-vulkan'
   v: null # verbose output
