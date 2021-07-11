@@ -104,9 +104,9 @@ class Upscaler:
         processes: int = 1,
         video2x_cache_directory: pathlib.Path = pathlib.Path(tempfile.gettempdir())
         / "video2x",
-        extracted_frame_format: str = "jpg",
+        extracted_frame_format: str = "png",
         output_file_name_format_string: str = "{original_file_name}_output{extension}",
-        image_output_extension: str = ".jpg",
+        image_output_extension: str = ".png",
         video_output_extension: str = ".mp4",
         preserve_frames: bool = False,
     ):
